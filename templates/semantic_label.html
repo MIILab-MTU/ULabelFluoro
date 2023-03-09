@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>page title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/semantic_label.css">
+</head>
+
+<body>
+<div id="wrapper" onselectstart="return false">
+    <nav>
+        <div class="nav-item">
+            <p>File</p>
+            <ul class="nav-item-1 ">
+                <li class="openBtn">
+                    <img src="../static/icons/open.png" alt="" title="">
+                    <p class="operate-title">Open</p>
+                </li>
+                <li class="nextBtn">
+                    <img src="../static/icons/next.png" alt="" title="">
+                    <p class="operate-title">Next Image</p>
+                </li>
+                <li class="prevBtn">
+                    <img src="../static/icons/prev.png" alt="" title="">
+                    <p class="operate-title">Prev Image</p>
+                </li>
+                <li class="openDirBtn">
+                    <img src="../static/icons/open.png" alt="" title="">
+                    <p class="operate-title">Open Dir</p>
+                </li>
+                <li>
+                    <img>
+                    <p class="operate-title">Open Recent</p>
+                </li>
+                <li class="saveBtn">
+                    <img src="../static/icons/save.png" alt="" title="">
+                    <p class="operate-title">Save</p>
+                </li>
+                <li>
+                    <img src="../static/icons/save-as.png" alt="" title="">
+                    <p class="operate-title">Save As</p>
+                </li>
+
+                <!--
+                <li>
+                    <img src="../static/icons/save.png" alt="" title="">
+                    <p class="operate-title">Save Automatically</p>
+                </li>
+
+                <li>
+                    <img src="../static/icons/open.png" alt="" title="">
+                    <p class="operate-title">Change Output Dir</p>
+                </li>
+                <li>
+                    <img src="../static/icons/close.png" alt="" title="">
+                    <p class="operate-title">Close</p>
+                </li>
+                <li>
+                    <img src="../static/icons/delete.png" alt="" title="">
+                    <p class="operate-title">Delete File</p>
+                </li>
+                <li>
+                    <img src="../static/icons/quit.png" alt="" title="">
+                    <p class="operate-title">Quit</p>
+                </li>
+                -->
+
+
+            </ul>
+        </div>
+        <div class="nav-item">
+            <p>Edit</p>
+            <ul class="nav-item-2">
+                <li class="item-list">
+                    <img src="../static/icons/objects.png" alt="" title="">
+                    <p class="operate-title">Create Polygons</p>
+                </li>
+                <li>
+                    <img src="../static/icons/objects.png" alt="" title="">
+                    <p class="operate-title">Create Rectangle</p>
+                </li>
+                <li>
+                    <img src="../static/icons/objects.png" alt="" title="">
+                    <p class="operate-title">Create Circle</p>
+                </li>
+                <li>
+                    <img src="../static/icons/objects.png" alt="" title="">
+                    <p class="operate-title">Create Line</p>
+                </li>
+                <li>
+                    <img src="../static/icons/objects.png" alt="" title="">
+                    <p class="operate-title">Create Point</p>
+                </li>
+                <li>
+                    <img src="../static/icons/objects.png" alt="" title="">
+                    <p class="operate-title">Create LineStrip</p>
+                </li>
+
+                <!--
+                <li>
+                    <img src="../static/icons/edit.png" alt="" title="">
+                    <p class="operate-title">Edit Polygons</p>
+                </li>
+                <li>
+                    <img src="../static/icons/edit.png" alt="" title="">
+                    <p class="operate-title">Edit Label</p>
+                </li>
+                <li>
+                    <img src="../static/icons/copy.png" alt="" title="">
+                    <p class="operate-title">Duplicate Polygons</p>
+                </li>
+                <li>
+                    <img src="../static/icons/cancel.png" alt="" title="">
+                    <p class="operate-title">Delete Polygons</p>
+                </li>
+                <li>
+                    <img src="../static/icons/undo.png" alt="" title="">
+                    <p class="operate-title">Undo</p>
+                </li>
+                <li>
+                    <img src="../static/icons/undo.png" alt="" title="">
+                    <p class="operate-title">Undo last point</p>
+                </li>
+                <li>
+                    <img>
+                    <p class="operate-title">Polygon Line Color</p>
+                </li>
+                <li>
+                    <img src="../static/icons/color.png" alt="" title="">
+                    <p class="operate-title">Polygon Fill Color</p>
+                </li>
+                <li>
+                    <img>
+                    <p class="operate-title">Keep Previous Annotation</p>
+                </li>
+                -->
+
+            </ul>
+        </div>
+        <div class="nav-item">
+            <p>View</p>
+            <ul class="nav-item-3">
+                <li class="item-list">
+                    <img>
+                    <p class="operate-title">Flags</p>
+                </li>
+                <li>
+                    <img>
+                    <p class="operate-title">Label List</p>
+                </li>
+                <li>
+                    <img>
+                    <p class="operate-title">Polygon Labels</p>
+                </li>
+                <li>
+                    <img>
+                    <p class="operate-title">File List</p>
+                </li>
+                <li>
+                    <img src="../static/icons/color.png" alt="" title="">
+                    <p class="operate-title">Fill Drawing Polygon</p>
+                </li>
+                <li>
+                    <img src="../static/icons/eye.png" alt="" title="">
+                    <p class="operate-title">Hide Polygons</p>
+                </li>
+                <li>
+                    <img src="../static/icons/eye.png" alt="" title="">
+                    <p class="operate-title">Show Polygons</p>
+                </li>
+                <li>
+                    <img src="../static/icons/zoom-out.png" alt="" title="">
+                    <p class="operate-title">Zoom In</p>
+                </li>
+                <li>
+                    <img src="../static/icons/zoom-in.png" alt="" title="">
+                    <p class="operate-title">Zoom Out</p>
+                </li>
+                <li>
+                    <img src="../static/icons/zoom-out.png" alt="" title="">
+                    <p class="operate-title">Original size</p>
+                </li>
+                <li>
+                    <img src="../static/icons/fit-window.png" alt="" title="">
+                    <p class="operate-title">Fit Window</p>
+                </li>
+                <li>
+                    <img src="../static/icons/fit-width.png" alt="" title="">
+                    <p class="operate-title">Fit Width</p>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-item">
+            <p>Help</p>
+            <ul class="nav-item-4">
+            </ul>
+        </div>
+        <div id="div_angle" class="Angle"><p id="p_angle"></p></div>
+    </nav>
+    <div id="inner">
+        <div class="frame-left">
+            <div class="frame-left-box">
+                {#                    <div class="operate-item openBtn" onclick="jump()">#}
+                {#                        <!--<img src="../static/icons/open.png">-->#}
+                {#                        <img src="../static/icons/upload.png">#}
+                {#                        <p>Upload</p>#}
+                {#                    </div>#}
+                <!--<input id="openInput" type="file" style="display:none;" accept="image/png, image/jpeg" />-->
+                {#                    <div class="operate-item openDirBtn">#}
+                {#                        <img src="../static/icons/open.png">#}
+                {#                        <p>Open Dir</p>#}
+                {#                    </div>#}
+                {#                    <input id="openDirInput" type="file" style="display:none;" webkitdirectory multiple />#}
+                {#                    <div class="operate-item nextfolderBtn">#}
+                {#                        <img src="../static/icons/next-sub.jpg">#}
+                {#                        <p>Next Folder</p>#}
+                {#                    </div>#}
+                {#                    <div class="operate-item prefolderBtn">#}
+                {#                        <img src="../static/icons/pre-sub.jpg">#}
+                {#                        <p>Pre Folder</p>#}
+                {#                    </div>#}
+                {#                     <div class="operate-item eraserBtn">#}
+                {#                        <img src="../static/icons/eraser.jpg">#}
+                {#                        <p>Eraser</p>#}
+                {#                    </div>#}
+                {#                     <div class="operate-item clearAreaBtn">#}
+                {#                        <img src="../static/icons/eraser.jpg">#}
+                {#                        <p>Clear Area</p>#}
+                {#                    </div>#}
+                {#                    <div class="operate-item saveBtn">#}
+                {#                        <img src="../static/icons/save.png">#}
+                {#                        <p>Save Part</p>#}
+                {#                    </div>#}
+
+                <div class="operate-item refreshBtn">
+                    <img src="../static/icons/refersh.png">
+                    <p>Refresh</p>
+                </div>
+
+                <div class="operate-item nextimgBtn">
+                    <img src="../static/icons/next.png">
+                    <p>Next Image</p>
+                </div>
+                <div class="operate-item previmgBtn">
+                    <img src="../static/icons/prev.png">
+                    <p>Prev Image</p>
+                </div>
+                <div class="operate-item fillAreaBtn">
+                    <img src="../static/icons/Select_area.png">
+                    <p>Select Area</p>
+                </div>
+                <div class="operate-item undoBtn">
+                    <img src="../static/icons/Undo.png">
+                    <p>Undo</p>
+                </div>
+                <div class="operate-item zoomIn">
+                    <img src="../static/icons/zoom_in.png">
+                    <p>Zoom In</p>
+                </div>
+                <div class="operate-item zoomOut">
+                    <img src="../static/icons/zoom_out.png">
+                    <p>Zoom Out</p>
+                </div>
+
+                <div class="operate-item saveAllBtn">
+                    <img src="../static/icons/save.png">
+                    <p>Save All</p>
+                </div>
+                <div class="operate-item downloadBtn" data-toggle="modal" data-target="#downModal">
+                    <img src="../static/icons/download.png">
+                    <p>Download</p>
+                </div>
+
+                <!--
+                <div class="operate-item">
+                    <img src="../static/icons/delete.png">
+                    <p>Delete File</p>
+                </div>
+                <div class="operate-item createBtn">
+                    <img src="../static/icons/objects.png">
+                    <p>Create Polygons</p>
+                </div>
+                <div class="operate-item editBtn">
+                    <img src="../static/icons/edit.png">
+                    <p>Edit Polygons</p>
+                </div>
+                <div class="operate-item">
+                    <img src="../static/icons/copy.png">
+                    <p>Duplicate Polygons</p>
+                </div>
+                <div class="operate-item delete">
+                    <img src="../static/icons/cancel.png">
+                    <p>Delete Polygons</p>
+                </div>
+                <div class="operate-item zoomIn" onclick="zoomIn()">
+                    <img src="../static/icons/zoom-in.png">
+                    <p>Zoom In</p>
+                </div>
+                <div class="operate-item zoomOut" onclick="zoomOut()">
+                    <img src="../static/icons/zoom-out.png">
+                    <p>Zoom Out</p>
+                </div>
+                <div class="operate-item" onclick="fit_window()">
+                    <img src="../static/icons/fit-window.png" >
+                    <p>Fit Window</p>
+                </div>
+                <div class="operate-item">
+                    <img src="../static/icons/fit-width.png">
+                    <p>Fit Width</p>
+                </div>
+                -->
+
+            </div>
+        </div>
+        <div class="frame-middle">
+            <div class="img-wrap" id="ImgWrap">
+                <img id="display">
+                <canvas id="canvas"></canvas>
+            </div>
+            <p></p>
+        </div>
+        <div class="frame-right">
+            <div class="frame-right-box">
+                {#                    <div class="label-item">#}
+                {#                        <div class="label-item-head">#}
+                {#                            <div class="item-title">Event Logs</div>#}
+                {#                            <div class="item-operate">#}
+                {#                                <div class="close-btn">#}
+                {#                                    <img src="../static/icons/close-btn.png">#}
+                {#                                </div>#}
+                {#                                <div class="scale-btn">#}
+                {#                                    <img src="../static/icons/scale.png">#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                        </div>#}
+                {#                        <div class="label-item-content"></div>#}
+                {#                    </div>#}
+                {#                    <div class="label-item">#}
+                {#                        <div class="label-item-head">#}
+                {#                            <div class="item-title">Label List</div>#}
+                {#                            <div class="item-operate">#}
+                {#                                <div class="close-btn">#}
+                {#                                    <img src="../static/icons/close-btn.png">#}
+                {#                                </div>#}
+                {#                                <div class="scale-btn">#}
+                {#                                    <img src="../static/icons/scale.png">#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                        </div>#}
+                {#                        <div class="label-item-content">#}
+                {#                            <ul id="labelList"></ul>#}
+                {#                        </div>#}
+                {#                    </div>#}
+                {#            </div>#}
+                <div class="label-item">
+                    <div class="label-item-head">
+                        <div class="item-title">File List</div>
+                        <div class="item-operate">
+                            <div class="close-btn">
+                                <img src="../static/icons/close-btn.png" alt="">
+                            </div>
+                            <div class="scale-btn">
+                                <img src="../static/icons/scale.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-item-content">
+                        <ul id="fileList"></ul>
+                    </div>
+                </div>
+                <div class="label-item">
+                    <div class="label-item-head">
+                        <div class="item-title">Label Names</div>
+                        <div class="item-operate">
+                            <div class="close-btn">
+                                <img src="../static/icons/close-btn.png">
+                            </div>
+                            <div class="scale-btn">
+                                <img src="../static/icons/scale.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-item-content">
+                        <ul id="polygonLabels"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{#    <!-- Download-select-->#}
+{#    <div class="modal fade" id="downModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">#}
+{#        <div class="modal-dialog" role="document">#}
+{#            <div class="modal-content">#}
+{#                <div class="modal-header">#}
+{#                    <h4 class="modal-title" id="myModalLabel">Select Download Data</h4>#}
+{#                </div>#}
+{#                <div class="modal-body">#}
+{#                    <input type="text" list="browsers" class="form-control" autocomplete="off" value="{{ filenames.first.filename }}">#}
+{#                    <datalist id="browsers">#}
+{#                        {% for file in filenames %}#}
+{#                            <option value="{{ file.filename }}" selected>#}
+{#                        {% endfor %}#}
+{#                    </datalist>#}
+{#                </div>#}
+{#                <div class="modal-footer">#}
+{#                    <button type="button" class="btn btn-primary" id="savedown">download</button>#}
+{#                    <button type="button" class="btn btn-primary" id="Canceldown">cancel</button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Enter label name</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" list="browsers" class="form-control" autocomplete="off">
+                    <datalist id="browsers">
+                        <option value="LAD" selected>
+                        <option value="R1">
+                        <option value="D1">
+                        <option value="D2">
+                        <option value="LCX">
+                        <option value="OM1">
+                        <option value="OM2">
+                        <option value="LMA">
+                        <option value="RMA">
+                        <option value="PDA">
+                        <option value="PLB">
+                    </datalist>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="saveNameBtn">save</button>
+                    <button type="button" class="btn btn-primary" id="CancelBtn">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var subjects_list = JSON.parse('{{ sujects_list|safe }}')
+        console.log(subjects_list)
+        var indexes_list = JSON.parse('{{ indexes_list|safe }}')
+        var file_dir = JSON.parse('{{ file_dir|safe }}')
+        var get_predicted_data_url ={% url "get_predicted_data" %}
+        var post_modify_label_url ={% url "post_modify_label" %}
+        var save_semantic_labels_url ={% url "save_semantic_labels" %}
+        var angleinfor_url ={% url "angleinfor" %}
+        var download_url ={% url "download_file" %}
+    </script>
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/semantic_label.js"></script>
+</body>
+</html>

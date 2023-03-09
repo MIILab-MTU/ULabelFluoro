@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app" class="app" style="width: 200px;height: 2200px;background-color: black;">
+
+</div>
+</body>
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('div').on("mousewheel DOMMouseScroll", function (e) {
+            var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||  // chrome & ie
+                (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));              // firefox
+            // 存放应该设置的元素的top值
+            if (delta > 0) {
+                // 向上滚
+                console.log("up")
+            } else if (delta < 0) {
+                // 向下滚
+                console.log("down")
+            }
+        });
+    });
+
+    //$("div").hide()
+    /*
+    $("div").mousewheel(function (event) {
+        console.log("aaa")
+        {#console.log(event.deltaX, event.deltaY, event.deltaFactor)#}
+    })*/
+</script>
+</html>

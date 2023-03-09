@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.disable {
+	pointer-events: none;
+}
+#wrapper nav {
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  background-image: linear-gradient(to bottom, white 1%, rgba(0, 0, 255, 0.2) 90%);
+}
+
+#wrapper nav .nav-item {
+  font-size: 1em;
+  width: 4em;
+  text-align: center;
+  line-height: 2.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 0;
+}
+
+/*#wrapper label-item-range{*/
+/*  font-size: 1em;*/
+/*  width: 4em;*/
+/*  text-align: center;*/
+/*  line-height:40px;*/
+/*  box-sizing: border-box;*/
+/*  cursor: pointer;*/
+/*  z-index: 0;*/
+/*  margin-left: 30px;*/
+/*}*/
+.Angle{
+  /*font-size: 1em;*/
+  text-align: center;
+  height: 40px;
+  line-height:40px;
+  box-sizing: border-box;
+  cursor: default;
+  z-index: 0;
+  margin-left: 380px;
+}
+
+.Q{
+  /*font-size: 1em;*/
+  text-align: center;
+  height: 40px;
+  line-height:40px;
+  box-sizing: border-box;
+  cursor: default;
+  z-index: 0;
+  margin-left: 220px;
+}
+.E{
+  font-size: 1em;
+  text-align: center;
+  height: 40px;
+  line-height:40px;
+  box-sizing: border-box;
+  cursor: default;
+  z-index: 0;
+  /*margin-left: 30px;*/
+}
+.label-item-range{
+  font-size: 1em;
+  text-align: center;
+  height: 40px;
+  line-height:40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 0;
+  /*margin-left: 30px;*/
+}
+#myInput{
+  margin-top: 12px;
+}
+
+#wrapper nav .nav-item ul.nav-item-2 {
+  left: 4em;
+  border-left: 1px solid #aaa;
+}
+
+#wrapper nav .nav-item ul.nav-item-3 {
+  left: 8em;
+  border-left: 1px solid #aaa;
+}
+
+#wrapper nav .nav-item ul.nav-item-4 {
+  left: 12em;
+  border-left: 1px solid #aaa;
+}
+
+#wrapper nav .nav-item ul {
+  display: none;
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  background-color: #efeeee;
+  list-style: none;
+}
+
+#wrapper nav .nav-item ul li {
+  text-align: left;
+  padding: 0px 70px 0px 10px;
+}
+
+#wrapper nav .nav-item ul li:hover {
+  box-shadow: 1px 1px 5px 2px #999 inset;
+  background-color: rgba(0, 0, 255, 0.1);
+  border-radius: 5px;
+}
+
+#wrapper nav .nav-item ul li p {
+  display: inline-block;
+}
+
+#wrapper nav .nav-item ul li img {
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+#wrapper nav .nav-item:hover {
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 255, 0.3) inset;
+}
+
+#wrapper nav .nav-item:hover ul {
+  display: block;
+}
+
+#wrapper #inner {
+  width: 100%;
+  height: calc(100vh - 2.8em);
+  background-color: #eeeeee;
+}
+
+#wrapper #inner .frame-left {
+  float: left;
+  width: 13vw;
+  height: 100%;
+  border-right: 1px solid #aaa;
+  border-top: 1px dashed #000;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#wrapper #inner .frame-left::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  cursor: pointer;
+}
+
+#wrapper #inner .frame-left::-webkit-scrollbar-thumb {
+  /*Small square inside the scroll bar*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #a1a1a1;
+}
+
+#wrapper #inner .frame-left::-webkit-scrollbar-track {
+  /*Track inside the scroll bar*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #EDEDED;
+}
+
+#wrapper #inner .frame-left .frame-left-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-content: start;
+  flex-wrap: wrap;
+}
+
+#wrapper #inner .frame-left .frame-left-box .operate-item {
+  font-size: 15px;
+  color: #333;
+  box-sizing: border-box;
+  padding: 0.5em;
+  width: 6em;
+  height: 5em;
+  text-align: center;
+  cursor: pointer;
+}
+
+#wrapper #inner .frame-left .frame-left-box .operate-item:hover {
+  box-shadow: 1px 1px 5px 2px #e7fff3 inset;
+  background-color: #ffffef;
+}
+
+#wrapper #inner .frame-left .frame-left-box .operate-item.clicked {
+    box-shadow: 1px 1px 5px 2px #ccc inset;
+    background-color: #ddd;
+}
+
+#wrapper #inner .frame-left .frame-left-box .operate-item p {
+  font-size: 13px;
+}
+
+#wrapper #inner .frame-left .frame-left-box .operate-item img {
+  max-width: 50%;
+  width: auto;
+  height: auto;
+}
+
+#wrapper #inner .frame-middle {
+  height: 100%;
+  width: 59.5vw;
+  border-right: 1px solid #aaa;
+  float: left;
+  position: relative;
+}
+
+#wrapper #inner .frame-middle .img-wrap{
+  height: 97%;
+  position: relative;
+  overflow: auto;
+}
+
+#wrapper #inner .frame-middle img{
+  /*position: absolute;*/
+  position: absolute;
+  overflow: scroll;
+  z-index: 1;
+}
+
+#wrapper #inner .frame-middle canvas{
+  position: absolute;
+  z-index: 999999;
+  overflow: auto;
+}
+
+#wrapper #inner .frame-middle p{
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#wrapper #inner .frame-right {
+  float: left;
+  width: 26vw;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#wrapper #inner .frame-right::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  cursor: pointer;
+}
+
+#wrapper #inner .frame-right::-webkit-scrollbar-thumb {
+  /*Small square inside the scroll bar*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #a1a1a1;
+}
+
+#wrapper #inner .frame-right::-webkit-scrollbar-track {
+  /*Track inside the scroll bar*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #EDEDED;
+}
+
+#wrapper #inner .frame-right .frame-right-box {
+  display: flex;
+  width: 99%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item {
+  width: 100%;
+  height: auto;
+  margin: 3px 0 3px 3px;
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head {
+  display: flex;
+  width: 100%;
+  height: 1.5em;
+  border: 1px solid #aaa;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, white 1%, #ccc 90%);
+  justify-content: space-between;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head .item-title {
+  padding: 0 5px 0 5px;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head .item-operate .scale-btn,
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head .item-operate .close-btn {
+  height: 100%;
+  width: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  float: right;
+  padding: 0 5px 0 5px;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head .item-operate .scale-btn img,
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head .item-operate .close-btn img {
+  height: 60%;
+  width: auto;
+  cursor: pointer;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-head .item-operate .close-btn img {
+  height: 70%;
+  width: auto;
+  cursor: pointer;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-content {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-content li{
+  list-style: none;
+  padding: 0px 2px;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-content li.active{
+  background-color: #eee;
+}
+
+#wrapper #inner .frame-right .frame-right-box .label-item .label-item-content li input{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+}

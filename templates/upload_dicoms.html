@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>ULabel DataLoader</title>
+<style>
+html,body{
+	height: calc(100% - 10px);
+}
+body{
+	background:	#f0ffff;
+}
+.content{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	color: #555;
+    background-color: #cce5ff;
+    border-radius: .25rem;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.content .title{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    overflow: hidden;
+    border-radius: .25rem .25em 0 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 1%, rgba(0, 0, 255, 0.2) 90%);
+}
+.content .body{
+	padding: 30px 10px;
+}
+input[type=submit]{
+	background: none;
+	border: none;
+}
+.ULabel_Fluoro_button,.a-upload,input[type=submit],.ULabel_Fluoro_button{
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input[type=file] {
+	display: none;
+}
+
+.a-upload:hover,input[type=submit]:hover,.ULabel_Fluoro_button:hover{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+</style>
+<body>
+	<div class="content">
+		<div class="title"></div>
+		<div class="body">
+			<form method="POST" action="/upload_dicoms/" enctype="multipart/form-data">
+				{% csrf_token %}
+				<p>Load the fluoroscopy angiograms in DICOM</p>
+				<a href="javascript:;" class="a-upload">
+					Select dicoms files
+				</a>
+				<input class="form-control-file" type="file" value="xx" name="Scores" accept="." multiple/>
+				<p id="fileName">No files selected</p>
+				<input class="form-control-file" type="submit" value="Upload"/>
+				{% if msg %}
+				<span>{{msg}}</span>
+				{% endif %}
+			</form>
+		<h1>Jump：</h1>
+		<a class="ULabel_Fluoro_button" >ULabel_Fluoro</a>
+	</div>
+		
+</div>
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(".ULabel_Fluoro_button").on("click",function () {
+        window.location.href = {% url "ULabel_Fluoro_page" %}
+    })
+	$(".a-upload").on("click", function(){
+		$("input[type=file]").click();
+	})
+	$("input[type=file]").on("change",function(){
+		var files = $(this)[0].files;
+		if(files.length == 1) {
+	    	$("#fileName").html(files[0].name);
+		}
+		else if(files.length == 0){
+	    	$("#fileName").html("No files selected");
+		}
+		else if(files.length > 1){
+			var names = ""
+	    	$("#fileName").html(`Selected ${files.length} files`);
+	    	for(var val of files){
+	    		names = names + val.name + "\n"
+	    		console.log(val.name)
+	    	}
+	    	$("#fileName").attr("title",names)
+		}
+	})
+</script>
+</body>
+</html>
