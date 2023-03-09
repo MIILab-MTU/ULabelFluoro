@@ -10,4 +10,9 @@ ULabelFluoro for coronary artery binary/semantic labels annotation
 
 # 3. Start django server
 
-python3.6 manage.py runserver 0.0.0.0:8888.
+`python3.6 manage.py runserver 0.0.0.0:8888`
+
+# 4. User manual
+
+See `Ulabel Fluoro Installation and User Manual.docx`
+
