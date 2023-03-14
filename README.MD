@@ -14,5 +14,5 @@ ULabelFluoro for coronary artery binary/semantic labels annotation
 
 # 4. User manual
 
-See `Ulabel Fluoro Installation and User Manual.docx`
+See `Ulabel Fluoro Installation and User Manual.docx`.
 
